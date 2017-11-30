@@ -24,10 +24,20 @@ class GitHubServiceMock: GitHubService {
     }
 }
 
+class AlertPresenterMock: AlertPresenter {
+    var showCount = 0
+    var lastMessage = ""
+    func show(message: String) {
+        showCount += 1
+        lastMessage = message
+    }
+}
+
 class ViewControllerTests: XCTestCase {
 
     var viewController: ViewController!
     var service = GitHubServiceMock()
+    var presenter = AlertPresenterMock()
 
     override func setUp() {
         super.setUp()
@@ -35,6 +45,7 @@ class ViewControllerTests: XCTestCase {
         let controller = storyboard.instantiateViewController(withIdentifier: "mx.drj.storyboard.controller")
         viewController = controller as? ViewController
         viewController.service = self.service
+        viewController.presenter = self.presenter
         _ = viewController.view
     }
 
@@ -71,6 +82,20 @@ class ViewControllerTests: XCTestCase {
         waitForExpectations(timeout: 0.5, handler: nil)
 
         XCTAssertEqual(viewController.values.last, service.successValue)
+    }
+
+    func testThatErrorIsPresentedWhenServiceFails() {
+        let expectation = self.expectation(description: "Service was called")
+        service.onQuoteLoaded = { expectation.fulfill() }
+
+        service.errorToReturn = "Error message"
+
+        let sender = UIBarButtonItem()
+        viewController.addTapped(sender)
+        waitForExpectations(timeout: 0.5, handler: nil)
+
+        XCTAssertEqual(presenter.showCount, 1)
+        XCTAssertEqual(presenter.lastMessage, "Error message")
     }
 
 }

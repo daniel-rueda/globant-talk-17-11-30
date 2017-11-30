@@ -12,16 +12,14 @@ class ViewController: UITableViewController {
 
     var values: [String] = []
     var service: GitHubService = GitHubServiceConcrete()
+    var presenter: AlertPresenter = AlertPresenterConcrete()
 
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         service.loadQuote(onSuccess: { (value) in
             self.values.append(value)
             self.tableView.reloadData()
         }, onFailure: { (error) in
-            let alertController = UIAlertController(title: "Application", message: error, preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alertController.addAction(action)
-            self.present(alertController, animated: true, completion: nil)
+            self.presenter.show(message: error)
         })
     }
 

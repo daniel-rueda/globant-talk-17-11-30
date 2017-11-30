@@ -14,6 +14,7 @@
 		E57A41011FCF7D1E00101637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FF1FCF7D1E00101637 /* LaunchScreen.storyboard */; };
 		E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */; };
 		E5B588A11FD0480B00D57369 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B588A01FD0480B00D57369 /* GitHubService.swift */; };
+		E5B588A31FD04BDA00D57369 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B588A21FD04BDA00D57369 /* AlertPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E57A410D1FCF7D1E00101637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		E5B588A01FD0480B00D57369 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		E5B588A21FD04BDA00D57369 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		E57A40F51FCF7D1E00101637 /* GlobantTechTalk */ = {
 			isa = PBXGroup;
 			children = (
+				E5B588A21FD04BDA00D57369 /* AlertPresenter.swift */,
 				E57A40F61FCF7D1E00101637 /* AppDelegate.swift */,
 				E57A40FD1FCF7D1E00101637 /* Assets.xcassets */,
 				E5B588A01FD0480B00D57369 /* GitHubService.swift */,
@@ -205,6 +208,7 @@
 				E57A40F91FCF7D1E00101637 /* ViewController.swift in Sources */,
 				E5B588A11FD0480B00D57369 /* GitHubService.swift in Sources */,
 				E57A40F71FCF7D1E00101637 /* AppDelegate.swift in Sources */,
+				E5B588A31FD04BDA00D57369 /* AlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
