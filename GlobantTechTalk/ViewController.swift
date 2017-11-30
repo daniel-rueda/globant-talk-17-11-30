@@ -11,37 +11,18 @@ import UIKit
 class ViewController: UITableViewController {
 
     var values: [String] = []
+    var service: GitHubService = GitHubServiceConcrete()
 
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
-        let url = URL(string: "https://api.github.com/zen")!
-        let task = URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
-            if let data = data {
-                let value = String(data: data, encoding: .utf8)!
-                self.values.append(value)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            }
-            if let response = urlResponse as? HTTPURLResponse {
-                if response.statusCode == 403 {
-                    let status = response.allHeaderFields["Status"] as? String
-                    let alertController = UIAlertController(title: "API", message: "Error: \(status!)", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "OK", style: .default) { _ in
-                        self.values.removeLast()
-                        self.tableView.reloadData()
-                    }
-                    alertController.addAction(action)
-                    self.present(alertController, animated: true, completion: nil)
-                }
-            }
-            if let error = error {
-                let alertController = UIAlertController(title: "Application", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alertController.addAction(action)
-                self.present(alertController, animated: true, completion: nil)
-            }
-        }
-        task.resume()
+        service.loadQuote(onSuccess: { (value) in
+            self.values.append(value)
+            self.tableView.reloadData()
+        }, onFailure: { (error) in
+            let alertController = UIAlertController(title: "Application", message: error, preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(action)
+            self.present(alertController, animated: true, completion: nil)
+        })
     }
 
     // MARK: - TableViewDataSource

@@ -13,6 +13,7 @@
 		E57A40FE1FCF7D1E00101637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FD1FCF7D1E00101637 /* Assets.xcassets */; };
 		E57A41011FCF7D1E00101637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FF1FCF7D1E00101637 /* LaunchScreen.storyboard */; };
 		E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */; };
+		E5B588A11FD0480B00D57369 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B588A01FD0480B00D57369 /* GitHubService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E57A41071FCF7D1E00101637 /* GlobantTechTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobantTechTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57A410D1FCF7D1E00101637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		E5B588A01FD0480B00D57369 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				E57A40F61FCF7D1E00101637 /* AppDelegate.swift */,
-				E57A40F81FCF7D1E00101637 /* ViewController.swift */,
-				E57A40FA1FCF7D1E00101637 /* Main.storyboard */,
 				E57A40FD1FCF7D1E00101637 /* Assets.xcassets */,
-				E57A40FF1FCF7D1E00101637 /* LaunchScreen.storyboard */,
+				E5B588A01FD0480B00D57369 /* GitHubService.swift */,
 				E57A41021FCF7D1E00101637 /* Info.plist */,
+				E57A40FF1FCF7D1E00101637 /* LaunchScreen.storyboard */,
+				E57A40FA1FCF7D1E00101637 /* Main.storyboard */,
+				E57A40F81FCF7D1E00101637 /* ViewController.swift */,
 			);
 			path = GlobantTechTalk;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57A40F91FCF7D1E00101637 /* ViewController.swift in Sources */,
+				E5B588A11FD0480B00D57369 /* GitHubService.swift in Sources */,
 				E57A40F71FCF7D1E00101637 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
