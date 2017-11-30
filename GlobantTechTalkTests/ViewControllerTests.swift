@@ -33,11 +33,21 @@ class AlertPresenterMock: AlertPresenter {
     }
 }
 
+class TableViewRowActionsProviderMock: TableViewRowActionsProvider {
+    var deleteActionCount = 0
+    func deleteAction(forRowAt indexPath: IndexPath, from tableView: UITableView, performAction: @escaping (Int) -> Void) -> UITableViewRowAction {
+        deleteActionCount += 1
+        performAction(indexPath.row)
+        return UITableViewRowAction()
+    }
+}
+
 class ViewControllerTests: XCTestCase {
 
     var viewController: ViewController!
     var service = GitHubServiceMock()
     var presenter = AlertPresenterMock()
+    var provider = TableViewRowActionsProviderMock()
 
     override func setUp() {
         super.setUp()
@@ -46,6 +56,7 @@ class ViewControllerTests: XCTestCase {
         viewController = controller as? ViewController
         viewController.service = self.service
         viewController.presenter = self.presenter
+        viewController.actionsProvider = self.provider
         _ = viewController.view
     }
 
@@ -67,8 +78,14 @@ class ViewControllerTests: XCTestCase {
     }
 
     func testThatTableReturnsActions() {
-        let actions = viewController.tableView(viewController.tableView, editActionsForRowAt: IndexPath(row: 0, section: 0))!
-        XCTAssertEqual(actions.count, 1)
+        viewController.values = ["One"]
+
+        // When the provider is invoked the associated action is performed, thus removing the value from the array
+        let actions = viewController.tableView(viewController.tableView, editActionsForRowAt: IndexPath(row: 0, section: 0))
+
+        XCTAssertEqual(provider.deleteActionCount, 1)
+        XCTAssertEqual(actions?.count, 1)
+        XCTAssertEqual(viewController.values.count, 0)
     }
 
     func testThatValueIsAddedWhenServiceReturnsSuccess() {

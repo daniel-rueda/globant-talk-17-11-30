@@ -15,6 +15,7 @@
 		E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */; };
 		E5B588A11FD0480B00D57369 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B588A01FD0480B00D57369 /* GitHubService.swift */; };
 		E5B588A31FD04BDA00D57369 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B588A21FD04BDA00D57369 /* AlertPresenter.swift */; };
+		E5B588A51FD0512E00D57369 /* TableViewRowActionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B588A41FD0512E00D57369 /* TableViewRowActionsProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		E5B588A01FD0480B00D57369 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 		E5B588A21FD04BDA00D57369 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		E5B588A41FD0512E00D57369 /* TableViewRowActionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRowActionsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				E57A40FF1FCF7D1E00101637 /* LaunchScreen.storyboard */,
 				E57A40FA1FCF7D1E00101637 /* Main.storyboard */,
 				E57A40F81FCF7D1E00101637 /* ViewController.swift */,
+				E5B588A41FD0512E00D57369 /* TableViewRowActionsProvider.swift */,
 			);
 			path = GlobantTechTalk;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				E57A40F91FCF7D1E00101637 /* ViewController.swift in Sources */,
 				E5B588A11FD0480B00D57369 /* GitHubService.swift in Sources */,
 				E57A40F71FCF7D1E00101637 /* AppDelegate.swift in Sources */,
+				E5B588A51FD0512E00D57369 /* TableViewRowActionsProvider.swift in Sources */,
 				E5B588A31FD04BDA00D57369 /* AlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

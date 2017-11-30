@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
     var values: [String] = []
     var service: GitHubService = GitHubServiceConcrete()
     var presenter: AlertPresenter = AlertPresenterConcrete()
+    var actionsProvider: TableViewRowActionsProvider = TableViewRowActionsProviderConcrete()
 
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         service.loadQuote(onSuccess: { (value) in
@@ -37,11 +38,8 @@ class ViewController: UITableViewController {
 
     // MARK: - TableViewDelegate
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let action = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-            self.tableView.beginUpdates()
-            self.values.remove(at: indexPath.row)
-            self.tableView.deleteRows(at: [indexPath], with: .automatic)
-            self.tableView.endUpdates()
+        let action = actionsProvider.deleteAction(forRowAt: indexPath, from: tableView) { (index) in
+            self.values.remove(at: index)
         }
         return [action]
     }
