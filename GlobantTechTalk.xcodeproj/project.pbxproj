@@ -12,7 +12,7 @@
 		E57A40FC1FCF7D1E00101637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FA1FCF7D1E00101637 /* Main.storyboard */; };
 		E57A40FE1FCF7D1E00101637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FD1FCF7D1E00101637 /* Assets.xcassets */; };
 		E57A41011FCF7D1E00101637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FF1FCF7D1E00101637 /* LaunchScreen.storyboard */; };
-		E57A410C1FCF7D1E00101637 /* GlobantTechTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A410B1FCF7D1E00101637 /* GlobantTechTalkTests.swift */; };
+		E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,8 @@
 		E57A41001FCF7D1E00101637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E57A41021FCF7D1E00101637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57A41071FCF7D1E00101637 /* GlobantTechTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobantTechTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E57A410B1FCF7D1E00101637 /* GlobantTechTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobantTechTalkTests.swift; sourceTree = "<group>"; };
 		E57A410D1FCF7D1E00101637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,8 @@
 		E57A410A1FCF7D1E00101637 /* GlobantTechTalkTests */ = {
 			isa = PBXGroup;
 			children = (
-				E57A410B1FCF7D1E00101637 /* GlobantTechTalkTests.swift */,
 				E57A410D1FCF7D1E00101637 /* Info.plist */,
+				E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */,
 			);
 			path = GlobantTechTalkTests;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57A410C1FCF7D1E00101637 /* GlobantTechTalkTests.swift in Sources */,
+				E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

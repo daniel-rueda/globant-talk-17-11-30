@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="x6t-ce-TRh">
             <objects>
-                <tableViewController id="KPr-IC-R5W" customClass="ViewController" customModule="GlobantTechTalk" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="mx.drj.storyboard.controller" id="KPr-IC-R5W" customClass="ViewController" customModule="GlobantTechTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IO9-sJ-VoD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
