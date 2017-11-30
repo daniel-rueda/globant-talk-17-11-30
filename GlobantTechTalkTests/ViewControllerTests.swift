@@ -42,6 +42,13 @@ class TableViewRowActionsProviderMock: TableViewRowActionsProvider {
     }
 }
 
+class TableViewMock: UITableView {
+    var deselectCount = 0
+    override func deselectRow(at indexPath: IndexPath, animated: Bool) {
+        deselectCount += 1
+    }
+}
+
 class ViewControllerTests: XCTestCase {
 
     var viewController: ViewController!
@@ -113,6 +120,12 @@ class ViewControllerTests: XCTestCase {
 
         XCTAssertEqual(presenter.showCount, 1)
         XCTAssertEqual(presenter.lastMessage, "Error message")
+    }
+
+    func testThatRowIsDeselectedWhenRowIsSelected() {
+        let table = TableViewMock()
+        viewController.tableView(table, didSelectRowAt: IndexPath(row: 0, section: 0))
+        XCTAssertEqual(table.deselectCount, 1)
     }
 
 }
