@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E53744861FD0859800027B93 /* GitHubServiceConcreteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53744851FD0859800027B93 /* GitHubServiceConcreteTests.swift */; };
+		E53744881FD089EF00027B93 /* NetworkManagerConcreteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53744871FD089EF00027B93 /* NetworkManagerConcreteTests.swift */; };
 		E57A40F71FCF7D1E00101637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A40F61FCF7D1E00101637 /* AppDelegate.swift */; };
 		E57A40F91FCF7D1E00101637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A40F81FCF7D1E00101637 /* ViewController.swift */; };
 		E57A40FC1FCF7D1E00101637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FA1FCF7D1E00101637 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		E53744851FD0859800027B93 /* GitHubServiceConcreteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubServiceConcreteTests.swift; sourceTree = "<group>"; };
+		E53744871FD089EF00027B93 /* NetworkManagerConcreteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerConcreteTests.swift; sourceTree = "<group>"; };
 		E57A40F31FCF7D1E00101637 /* GlobantTechTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobantTechTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57A40F61FCF7D1E00101637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E57A40F81FCF7D1E00101637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				E53744851FD0859800027B93 /* GitHubServiceConcreteTests.swift */,
 				E57A410D1FCF7D1E00101637 /* Info.plist */,
+				E53744871FD089EF00027B93 /* NetworkManagerConcreteTests.swift */,
 				E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */,
 			);
 			path = GlobantTechTalkTests;
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53744861FD0859800027B93 /* GitHubServiceConcreteTests.swift in Sources */,
+				E53744881FD089EF00027B93 /* NetworkManagerConcreteTests.swift in Sources */,
 				E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
