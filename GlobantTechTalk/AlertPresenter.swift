@@ -10,13 +10,11 @@ import Foundation
 import UIKit
 
 protocol AlertPresenter: class {
-    func show(message: String)
+    func show(message: String, from controller: UIViewController)
 }
 
 class AlertPresenterConcrete: AlertPresenter {
-    var controller: UIViewController { return UIApplication.shared.keyWindow!.rootViewController! }
-
-    func show(message: String) {
+    func show(message: String, from controller: UIViewController) {
         let alertController = UIAlertController(title: "Application", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(action)

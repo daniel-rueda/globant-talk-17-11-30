@@ -15,6 +15,7 @@
 		E57A40FE1FCF7D1E00101637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FD1FCF7D1E00101637 /* Assets.xcassets */; };
 		E57A41011FCF7D1E00101637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A40FF1FCF7D1E00101637 /* LaunchScreen.storyboard */; };
 		E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */; };
+		E5A71E4A1FD090C0006A769C /* AlertPresenterConcreteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A71E491FD090C0006A769C /* AlertPresenterConcreteTests.swift */; };
 		E5B4435B1FD082B300C6A64F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B4435A1FD082B300C6A64F /* NetworkManager.swift */; };
 		E5B4435D1FD0852E00C6A64F /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B4435C1FD0852E00C6A64F /* URLSessionProtocol.swift */; };
 		E5B588A11FD0480B00D57369 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B588A01FD0480B00D57369 /* GitHubService.swift */; };
@@ -45,6 +46,7 @@
 		E57A41071FCF7D1E00101637 /* GlobantTechTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobantTechTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57A410D1FCF7D1E00101637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57A41161FCF8B3B00101637 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		E5A71E491FD090C0006A769C /* AlertPresenterConcreteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterConcreteTests.swift; sourceTree = "<group>"; };
 		E5B4435A1FD082B300C6A64F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E5B4435C1FD0852E00C6A64F /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		E5B588A01FD0480B00D57369 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		E57A410A1FCF7D1E00101637 /* GlobantTechTalkTests */ = {
 			isa = PBXGroup;
 			children = (
+				E5A71E491FD090C0006A769C /* AlertPresenterConcreteTests.swift */,
 				E53744851FD0859800027B93 /* GitHubServiceConcreteTests.swift */,
 				E57A410D1FCF7D1E00101637 /* Info.plist */,
 				E53744871FD089EF00027B93 /* NetworkManagerConcreteTests.swift */,
@@ -236,6 +239,7 @@
 			files = (
 				E53744861FD0859800027B93 /* GitHubServiceConcreteTests.swift in Sources */,
 				E53744881FD089EF00027B93 /* NetworkManagerConcreteTests.swift in Sources */,
+				E5A71E4A1FD090C0006A769C /* AlertPresenterConcreteTests.swift in Sources */,
 				E57A41171FCF8B3B00101637 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

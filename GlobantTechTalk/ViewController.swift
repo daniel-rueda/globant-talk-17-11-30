@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
             self.values.append(value)
             self.tableView.reloadData()
         }, onFailure: { (error) in
-            self.presenter.show(message: error)
+            self.presenter.show(message: error, from: self)
         })
     }
 

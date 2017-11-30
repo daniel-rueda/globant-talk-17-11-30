@@ -27,7 +27,7 @@ class GitHubServiceMock: GitHubService {
 class AlertPresenterMock: AlertPresenter {
     var showCount = 0
     var lastMessage = ""
-    func show(message: String) {
+    func show(message: String, from controller: UIViewController) {
         showCount += 1
         lastMessage = message
     }
